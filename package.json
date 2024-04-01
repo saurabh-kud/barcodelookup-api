@@ -1,0 +1,16 @@
+{
+  "name": "barcodelookup",
+  "version": "1.0.0",
+  "description": "module to find the details of a barcode using barcode number",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "puppeteer": "^22.6.1"
+  }
+}
