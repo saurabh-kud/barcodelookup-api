@@ -17,12 +17,12 @@ app.get("/barcode/:id", async (req, res) => {
       error: "barcode number is not valid",
     });
   } else {
-    res.json({ message: "successfully fetched the data", data, error: {} });
+    res.json({ message: "barcode data fetched succefully", data, error: {} });
   }
 });
 
 app.get("*", (req, res) => res.json({ message: "you are on home route" }));
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log("server is running on port number", PORT);

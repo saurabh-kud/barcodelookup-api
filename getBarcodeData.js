@@ -43,6 +43,7 @@ const getBarCode = async (barCodeId) => {
     });
 
     await browser.close();
+    console.log(title, imageUrl, categoty);
     return { title, imageUrl, categoty };
   } catch (error) {
     await browser.close();
